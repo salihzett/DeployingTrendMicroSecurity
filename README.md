@@ -1,5 +1,5 @@
-# Deploying-Trend-Micro-Security
-###### a little tutorial with composer (but u can use any pkg-create-tool)
+# Deploying TrendMicro Worry-Free Security Services agent
+###### a little tutorial to create a trendmicro-installer for deployment - with composer (but u can use any pkg-create-tool)
 
 
 ### First Step: Downloading Installer Package
