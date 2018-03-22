@@ -15,5 +15,16 @@
 2. Click *Add Devices* again and choose under *Download the Installer Package (Advanced)* -> *For Service Providers*
 3. Get your *Identifier* by clicking on the button *Copy Identifier*
 ![3](images/Screenshot3.png)
+4. Put the *Identifier* in a plist file. Replace "PutYourIdentifier" parameter with your Identifier. (Use my default plist file in the repo)
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>#PutYourIdentifier</string>
+</dict>
+</plist>
+```
 
 ### Step 3: Distributable package with composer
