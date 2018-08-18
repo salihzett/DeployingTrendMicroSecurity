@@ -53,7 +53,7 @@ exit 1		## Failure
 ```
 
 3. We have the tree and we have also the *postinstall* file, the *WFBS-SVC_Agent_Installer.pkg* and the *Identifier.plist*. Put the files in the appropriate directories. Now, ensures that the right permissions are granted.
-
-`cd TrendMicroAgent´
-
-`sudo chown -R root:wheel \* ´
+```
+cd TrendMicroAgent
+sudo chown -R root:wheel *
+```
