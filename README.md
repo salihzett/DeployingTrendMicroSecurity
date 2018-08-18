@@ -70,3 +70,5 @@ pkgbuild: Adding top-level postinstall script
 pkgbuild: Wrote package to TrendMicroDeploy.pkg
 ```
 You are done! Finally you can test your package.
+
+*Note*: It could be that the application only starts if the Mac has been restarted before.
