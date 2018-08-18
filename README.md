@@ -56,4 +56,16 @@ exit 1		## Failure
 ```
 cd TrendMicroAgent
 sudo chown -R root:wheel *
+chmod a+x scripts/
 ```
+4. Now run the following command (while you are the TrendMicroAgent directory)
+```
+pkgbuild --root ROOT/ --identifier de.salihzengin.trendmicro --version 1.0 --nopayload --scripts scripts/ "TrendMicroDeploy.pkg"
+```
+(of course, you could sign your package with `--sign`
+A few seconds later, you get the following output:
+```
+pkgbuild: Adding top-level postinstall script
+pkgbuild: Wrote package to TrendMicroDeploy.pkg
+```
+You are done! Finally you can test your package.
