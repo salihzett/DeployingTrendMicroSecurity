@@ -1,6 +1,5 @@
 # Deploying TrendMicro Worry-Free Security Services agent
-###### a little tutorial to create a trendmicro-installer for macOS deployment - with pkgbuild (but u can use any pkg-create-tool)
-
+###### a little tutorial to create a trendmicro-installer for macOS deployment - with pkgbuild (of course u can use any "pkg-create-tool")
 
 ### Step 1: Downloading Installer Package
 1. Go to the [Trend Micro Security Website](https://wfbs-svc-emea.trendmicro.com/) 
