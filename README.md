@@ -1,5 +1,5 @@
 # Deploying TrendMicro Worry-Free Security Services agent
-###### a little tutorial to create a trendmicro-installer for macOS deployment - with composer (but u can use any pkg-create-tool)
+###### a little tutorial to create a trendmicro-installer for macOS deployment - with pkgbuild (but u can use any pkg-create-tool)
 
 
 ### Step 1: Downloading Installer Package
@@ -27,4 +27,31 @@
 </plist>
 ```
 
-### Step 3: Distributable package with composer
+### Step 3: Distributable package with pkgbuild (macOS inhouse tool)
+1. first, we need the following directory tree:
+```
+f.e. desktop
+      └── TrendMicroAgent
+                └── script
+                      └── postinstall
+    		└── ROOT
+        	     └── var
+			  └── tmp
+				└── TrendMicro
+					├── Identifier.plist
+					└── WFBS-SVC_Agent_Installer.pkg
+```
+2. We need the postinstall file. This file ensures that the WFBS-SVC_Agent_Installer.pkg is installed
+```shell
+#!/bin/sh
+## postinstall
+
+installer -pkg /var/tmp/TrendMicro/WFBS-SVC_Agent_Installer.pkg -target /
+
+exit 0		## Success
+exit 1		## Failure
+```
+
+3. We have the tree and we have also the *postinstall* file, the *WFBS-SVC_Agent_Installer.pkg* and the *Identifier.plist*. Put the files in the appropriate directories. Now, ensures that the right permissions are granted.
+`cd TrendMicroAgent´
+`sudo chown -R root:wheel \* ´
