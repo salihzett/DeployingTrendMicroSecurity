@@ -62,7 +62,8 @@ chmod a+x scripts/
 ```
 pkgbuild --root ROOT/ --identifier de.salihzengin.trendmicro --version 1.0 --nopayload --scripts scripts/ "TrendMicroDeploy.pkg"
 ```
-(of course, you could sign your package with `--sign`
+(of course, you could sign your package with `--sign`)
+
 A few seconds later, you get the following output:
 ```
 pkgbuild: Adding top-level postinstall script
