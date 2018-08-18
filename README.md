@@ -29,7 +29,7 @@
 ### Step 3: Distributable package with pkgbuild (macOS inhouse tool)
 1. first, we need the following directory tree:
 ```
-e.g. desktop
+e.g. Desktop
       └── TrendMicroAgent
                 └── script
                       └── postinstall
