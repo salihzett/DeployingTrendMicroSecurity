@@ -26,7 +26,7 @@
 </plist>
 ```
 
-### Step 3: Distributable package with pkgbuild (macOS inhouse tool)
+### Step 3: Create a distributable package with pkgbuild (macOS inhouse tool)
 1. first, we need the following directory tree:
 ```
 e.g. Desktop
