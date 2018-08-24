@@ -2,7 +2,7 @@
 ###### a little tutorial to create a trendmicro-installer for macOS deployment - with pkgbuild (of course u can use any other tool)
 
 ### Step 1: Downloading Installer Package
-1. Go to the [Trend Micro Security Website](https://wfbs-svc-emea.trendmicro.com/) 
+1. Go to the [Trend Micro Security Website](https://wfbs-svc-emea.trendmicro.com/) (with Safari)
 2. Click *Device* and choose your Device Group
 3. Click *Add Devices* and choose under *Install to this Device* -> Install
 ![1](images/Screenshot1.png)
