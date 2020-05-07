@@ -60,8 +60,6 @@ chmod a+x scripts/
 4. Now run the following command (while you are the TrendMicroAgent directory)
 ```
 pkgbuild --root ROOT/ --identifier de.salihzengin.trendmicro --version 1.0 --nopayload --scripts scripts/ "TrendMicroDeploy.pkg"
-```
-(of course, you could sign your package with `--sign`)
 
 A few seconds later, you get the following output:
 ```
@@ -69,5 +67,11 @@ pkgbuild: Adding top-level postinstall script
 pkgbuild: Wrote package to TrendMicroDeploy.pkg
 ```
 You are done! Finally you can test your package.
+
+```
+(of course, you could sign your package with `productsign`)
+```
+productsign --sign "Developer ID Installer: Your Developer Name (1A2B3C4D5E)" TrendMicroDeploy.pkg TrendMicroDeploy_signed.pkg
+```
 
 *Note*: It could be that the application only starts, if the Mac has been restarted before.
